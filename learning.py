@@ -52,6 +52,13 @@ class My_window(arcade.Window):
         self.set_update_rate(1 / 20)
         self.spin.update()
 
+    def on_mouse_press(self, x, y, button, modifiers):
+    # Called when the user presses a mouse button.
+
+        if button == arcade.MOUSE_BUTTON_LEFT:
+            print("Left mouse button pressed at", x, y)
+        elif button == arcade.MOUSE_BUTTON_RIGHT:
+            print("Right mouse button pressed at", x, y)
 
 
 def main():
